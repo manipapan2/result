@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resault</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+    <style>
+        *{
+            border-style: none;
+            user-select: none;
+        }
+
+
+        *:focus{
+            outline: none;
+            box-sizing: border-box;
+        }
+
+
+        body{
+
+        }
+
+
+        p{
+            display: flex;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+
+        .bodyFake{
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+
+        }
+
+        .bodyu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .divasl{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 70px;
+        }
+
+
+        .divfar{
+            display: flex;
+            width: 12%;
+            height: 70%;
+            border: red 2px solid;
+            border-radius: 8px;
+            justify-content: center;
+            /* justify-items: center; */
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 40%);
+            background: transparent;
+            backdrop-filter: blur(6px);
+            cursor: pointer;
+            transition: 500ms;
+       }
+
+
+       .divfar:hover{
+            transform: scale(1.3);
+       }
+
+       @media screen and (max-width:600px) {
+        .bodyFake{
+            flex-direction: column;
+        }    
+        
+        .divasl{
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+            }
+
+        .divfar{
+            font-size: 15;
+            width: 80%;
+            height: 10%;
+        }
+
+        .bodyu{
+            justify-items: flex-start;
+            flex-direction:row
+        }
+       }
+    </style>
+<body>
+    <div class="bodyFake">
+        
+    <div class="bodyu"> 
+        <div class="divasl">
+            <div class="divfar"><p>Page 104 Question 5 <br> 3 Out Of 6</p></div>
+            <div class="divfar"><p>Page 106 Question 3 <br> 12 Out Of 16</p></div>
+            <div class="divfar"><p>Page 107 Question 4 <br> 12 Out Of 15</p></div>
+            <div class="divfar"><p>Page 107 Question 5 <br> 5 Out Of 8</p></div>
+            <div class="divfar"><p>Page 113 Question 9 <br> 4 Out Of 8</p></div>
+        </div>
+
+        <div class="divasl">
+            <div class="divfar"><p>Page 115 <br>  Out Of </p></div>
+            <div class="divfar"><p>Page 116 Question 3 <br> 3 Out Of 6</p></div>
+            <div class="divfar"><p>Page 118 Question 3 <br>  Out Of </p></div>
+            <div class="divfar"><p>Page 119 Question 6 <br> 5 Out Of 6</p></div>
+        </div>
+    </div>
+        
+        
+    </div>
+
+
+</body>
+</html>
